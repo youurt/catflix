@@ -4,7 +4,6 @@ import {
   Container,
   Inner,
   Title,
-  Frame,
   Item,
   Header,
   Body,
@@ -22,10 +21,6 @@ const Accordion = ({ children, ...restProps }) => {
 
 Accordion.Title = ({ children, ...restProps }) => {
   return <Title {...restProps}>{children}</Title>;
-};
-
-Accordion.Frame = ({ children, ...restProps }) => {
-  return <Frame {...restProps}>{children}</Frame>;
 };
 
 Accordion.Item = ({ children, ...restProps }) => {
