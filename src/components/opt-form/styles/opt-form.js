@@ -23,11 +23,6 @@ export const Input = styled.input`
   outline: none;
 `;
 
-export const Break = styled.div`
-  flex-basis: 100%;
-  height: 0;
-`;
-
 export const Button = styled.button`
   display: flex;
   align-items: center;

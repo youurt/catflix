@@ -22,8 +22,4 @@ OptForm.Text = ({ children, ...restProps }) => {
   return <Text {...restProps}>{children}</Text>;
 };
 
-OptForm.Break = ({ ...restProps }) => {
-  return <Break {...restProps} />;
-};
-
 export default OptForm;
