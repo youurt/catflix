@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Inner,
   Container,
@@ -10,7 +11,7 @@ import {
 
 const Jumbotron = ({ children, direction = 'row', ...restProps }) => {
   return (
-    <Item direction={direction}>
+    <Item {...restProps} direction={direction}>
       <Inner direction={direction}>{children}</Inner>
     </Item>
   );
