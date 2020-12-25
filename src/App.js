@@ -4,7 +4,6 @@ import { Home, Browse, Signin, Signup } from './pages';
 import * as ROUTES from './constants/routes';
 
 const App = () => {
-  console.log(ROUTES.HOME);
   return (
     <Router>
       <Route exact path={ROUTES.HOME}>
