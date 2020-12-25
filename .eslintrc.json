@@ -31,7 +31,8 @@
             2,
             "single",
             {
-                "avoidEscape": true
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
             }
         ],
         "prettier/prettier": [

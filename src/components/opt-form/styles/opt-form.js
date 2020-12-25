@@ -9,6 +9,7 @@ export const Container = styled.div`
 
   @media (max-width: 1000px) {
     flex-direction: column;
+
     align-items: center;
   }
 `;
@@ -56,6 +57,11 @@ export const Button = styled.button`
     margin-top: 20px;
     font-weight: bold;
   }
+`;
+
+export const Break = styled.div`
+  flex-basis: 100%;
+  height: 0;
 `;
 
 export const Text = styled.p`
