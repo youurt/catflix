@@ -7,13 +7,14 @@ import { Form } from '../components';
 import * as ROUTES from '../constants/routes';
 
 const SignIn = () => {
-  const history = useHistory;
+  const history = useHistory();
   const { firebase } = useContext(FirebaseContext);
   const [emailAdress, setEmailAdress] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
   const isInvalid = password === '' || emailAdress === '';
+
   const handleSignIn = (event) => {
     event.preventDefault();
 
