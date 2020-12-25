@@ -21,6 +21,21 @@
     "rules": {
         "no-console": 0,
         "react/prop-types": 0,
+        "no-shadow": [
+            2,
+            {
+                "hoist": "all",
+                "allow": [
+                    "resolve",
+                    "reject",
+                    "done",
+                    "next",
+                    "err",
+                    "error"
+                ]
+            }
+        ],
+        "react/no-unescaped-entities": 0,
         "import/prefer-default-export": 0,
         "no-unused-vars": [
             1
