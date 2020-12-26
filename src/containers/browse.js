@@ -2,6 +2,8 @@ import React, { useState, useContext, useEffect } from 'react';
 import SelectProfileContainer from './profiles';
 import { FirebaseContext } from '../context/firebase';
 import { Loading, Header } from '../components';
+import * as ROUTES from '../constants/routes';
+import logo from '../logo.svg';
 
 const BrowseContainer = ({ slides }) => {
   const [profile, setProfile] = useState({});
@@ -18,8 +20,32 @@ const BrowseContainer = ({ slides }) => {
   return profile.displayName ? (
     <>
       {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
-      <Header src="joker1">
-        <p>hello</p>
+      <Header src="joker1" dontShowOnSmallViewPort>
+        <Header.Frame>
+          <Header.Group>
+            <Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix" />
+            <Header.TextLink>Series</Header.TextLink>
+            <Header.TextLink>Movies</Header.TextLink>
+          </Header.Group>
+          <Header.Group>
+            <Header.Profile>
+              <Header.Picture src={user.photoURL} />
+              <Header.Dropdown>
+                <Header.Group>
+                  <Header.Picture src={user.photoURL} />
+                  <Header.TextLink>{user.displayName}</Header.TextLink>
+                </Header.Group>
+              </Header.Dropdown>
+            </Header.Profile>
+          </Header.Group>
+        </Header.Frame>
+        <Header.Feature>
+          <Header.FeatureCallOut>Watch Joker Now!</Header.FeatureCallOut>
+          <Header.Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse
+            ipsam iure asperiores fuga quas nemo non ducimus. Enim, modi?
+          </Header.Text>
+        </Header.Feature>
       </Header>
     </>
   ) : (
