@@ -6,6 +6,7 @@ import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
 
 const BrowseContainer = ({ slides }) => {
+  const [searchTerm, setSearchTerm] = useState('');
   const [profile, setProfile] = useState({});
   const [loading, setLoading] = useState(true);
   const { firebase } = useContext(FirebaseContext);
@@ -25,15 +26,24 @@ const BrowseContainer = ({ slides }) => {
           <Header.Group>
             <Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix" />
             <Header.TextLink>Series</Header.TextLink>
-            <Header.TextLink>Movies</Header.TextLink>
+            <Header.TextLink>Films</Header.TextLink>
           </Header.Group>
           <Header.Group>
+            <Header.Search
+              searchTerm={searchTerm}
+              setSearchTerm={setSearchTerm}
+            />
             <Header.Profile>
               <Header.Picture src={user.photoURL} />
               <Header.Dropdown>
                 <Header.Group>
                   <Header.Picture src={user.photoURL} />
                   <Header.TextLink>{user.displayName}</Header.TextLink>
+                </Header.Group>
+                <Header.Group>
+                  <Header.TextLink onClick={() => firebase.auth().signOut()}>
+                    Sign out
+                  </Header.TextLink>
                 </Header.Group>
               </Header.Dropdown>
             </Header.Profile>
@@ -45,6 +55,7 @@ const BrowseContainer = ({ slides }) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse
             ipsam iure asperiores fuga quas nemo non ducimus. Enim, modi?
           </Header.Text>
+          <Header.PlayButton>Play</Header.PlayButton>
         </Header.Feature>
       </Header>
     </>
