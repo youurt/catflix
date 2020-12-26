@@ -2,7 +2,7 @@ import React from 'react';
 import { Link as ReactRouterLink } from 'react-router-dom';
 import { Background, Container, Logo, ButtonLink } from './styles/header';
 
-const Header = ({ bg = true, children, restProps }) => {
+const Header = ({ bg = true, children, ...restProps }) => {
   return bg ? <Background {...restProps}>{children}</Background> : children;
 };
 
