@@ -4,12 +4,12 @@ import 'firebase/auth';
 // import { seedDatabase } from '../seed';
 
 const config = {
-  apiKey: 'AIzaSyBzYqtKr2_GGjmc6D1BLBZ6MLB-EBWBocA',
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: 'catflix-f6367.firebaseapp.com',
   projectId: 'catflix-f6367',
   storageBucket: 'catflix-f6367.appspot.com',
   messagingSenderId: '978420050340',
-  appId: '1:978420050340:web:19f02eeddd023acdfcb931',
+  appId: process.env.REACT_APP_APP_ID,
 };
 const firebase = Firebase.initializeApp(config);
 
