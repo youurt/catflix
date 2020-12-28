@@ -4,7 +4,7 @@ import SelectProfileContainer from './profiles';
 import { FirebaseContext } from '../context/firebase';
 import { Card, Loading, Header, Player } from '../components';
 import * as ROUTES from '../constants/routes';
-import logo from '../logo.svg';
+import logo from '../logo.png';
 import FooterContainer from './footer';
 
 const BrowseContainer = ({ slides }) => {
@@ -43,10 +43,10 @@ const BrowseContainer = ({ slides }) => {
   return profile.displayName ? (
     <>
       {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
-      <Header src="joker1" dontShowOnSmallViewPort>
+      <Header src="alfred1" dontShowOnSmallViewPort>
         <Header.Frame>
           <Header.Group>
-            <Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix" />
+            <Header.Logo to={ROUTES.HOME} src={logo} alt="Classicflix" />
             <Header.TextLink
               active={category === 'series' ? 'true' : 'false'}
               onClick={() => setCategory('series')}
@@ -82,10 +82,14 @@ const BrowseContainer = ({ slides }) => {
           </Header.Group>
         </Header.Frame>
         <Header.Feature>
-          <Header.FeatureCallOut>Watch Joker Now!</Header.FeatureCallOut>
+          <Header.FeatureCallOut>
+            Watch Alfred Hitchcock Presents Now!
+          </Header.FeatureCallOut>
           <Header.Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse
-            ipsam iure asperiores fuga quas nemo non ducimus. Enim, modi?
+            Series of unrelated short stories covering elements of crime,
+            horror, drama, and comedy about people of different backgrounds
+            committing murders, suicides, thefts, and other sorts of crime
+            caused by certain motivations, perceived or not.
           </Header.Text>
           <Header.PlayButton>Play</Header.PlayButton>
         </Header.Feature>

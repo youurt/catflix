@@ -25,7 +25,7 @@ Player.Video = ({ src, ...restProps }) => {
           data-testid="player"
         >
           <Inner>
-            <video id="netflix-player" controls>
+            <video id="classicflix-player" controls>
               <source src={src} type="video/mp4" />
             </video>
             <Close />

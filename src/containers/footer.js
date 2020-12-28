@@ -10,7 +10,7 @@ const FooterContainer = () => {
           <Footer.Link href="#">FAQ</Footer.Link>
           <Footer.Link href="#">Ways to watch</Footer.Link>
           <Footer.Link href="#">Coporate Information</Footer.Link>
-          <Footer.Link href="#">Netflix Originals</Footer.Link>
+          <Footer.Link href="#">Classicflix Originals</Footer.Link>
         </Footer.Column>
         <Footer.Column>
           <Footer.Link href="#">Help Center</Footer.Link>
@@ -32,7 +32,7 @@ const FooterContainer = () => {
         </Footer.Column>
       </Footer.Row>
       <Footer.Break />
-      <Footer.Text>Netflix Deutschland</Footer.Text>
+      <Footer.Text>Classicflix Deutschland</Footer.Text>
     </Footer>
   );
 };

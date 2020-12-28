@@ -56,7 +56,7 @@ const SignIn = () => {
             </Form.Submit>
           </Form.Base>
           <Form.Text>
-            New to Netflix?
+            New to Classicflix?
             <span />
             <Form.Link to="/signup">Sign up now.</Form.Link>
           </Form.Text>

@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ROUTES from '../constants/routes';
-import logo from '../logo.svg';
+import logo from '../logo.png';
 import { Header, Profiles } from '../components';
 
 const SelectProfileContainer = ({ user, setProfile }) => {
@@ -8,7 +8,7 @@ const SelectProfileContainer = ({ user, setProfile }) => {
     <>
       <Header bg={false}>
         <Header.Frame>
-          <Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix" />
+          <Header.Logo to={ROUTES.HOME} src={logo} alt="Classicflix" />
         </Header.Frame>
       </Header>
       <Profiles>
