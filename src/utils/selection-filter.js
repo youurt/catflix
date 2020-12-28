@@ -2,46 +2,46 @@ const selectionFilter = ({ series, films }) => {
   return {
     series: [
       {
-        title: 'Documentaries',
-        data: series.filter((item) => item.genre === 'documentaries'),
-      },
-      {
-        title: 'Comedies',
-        data: series.filter((item) => item.genre === 'comedies'),
-      },
-      {
-        title: 'Children',
-        data: series.filter((item) => item.genre === 'children'),
-      },
-      {
         title: 'Crime',
         data: series.filter((item) => item.genre === 'crime'),
       },
       {
-        title: 'Feel Good',
-        data: series.filter((item) => item.genre === 'feel-good'),
+        title: 'Family',
+        data: series.filter((item) => item.genre === 'family'),
+      },
+      {
+        title: 'Comedy',
+        data: series.filter((item) => item.genre === 'comedy'),
+      },
+      {
+        title: 'Drama',
+        data: series.filter((item) => item.genre === 'drama'),
+      },
+      {
+        title: 'Action',
+        data: series.filter((item) => item.genre === 'action'),
       },
     ],
     films: [
+      {
+        title: 'Action',
+        data: films.filter((item) => item.genre === 'action'),
+      },
+      {
+        title: 'Comedy',
+        data: films.filter((item) => item.genre === 'comedy'),
+      },
       {
         title: 'Drama',
         data: films.filter((item) => item.genre === 'drama'),
       },
       {
-        title: 'Thriller',
-        data: films.filter((item) => item.genre === 'thriller'),
+        title: 'Horror',
+        data: films.filter((item) => item.genre === 'horror'),
       },
       {
-        title: 'Children',
-        data: films.filter((item) => item.genre === 'children'),
-      },
-      {
-        title: 'Suspense',
-        data: films.filter((item) => item.genre === 'suspense'),
-      },
-      {
-        title: 'Romance',
-        data: films.filter((item) => item.genre === 'romance'),
+        title: 'War',
+        data: films.filter((item) => item.genre === 'war'),
       },
     ],
   };

@@ -10,477 +10,557 @@ export const seedDatabase = (firebase) => {
     /* eslint-enable */
   }
 
-  /* Series
-    ============================================ */
-  // Documentaries
-  firebase.firestore().collection('series').add({
+  // /* Films
+  //   ============================================ */
+  // Action
+  firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Tiger King',
+    title: 'The Bridge on the River Kwai',
     description:
-      'An exploration of big cat breeding and its bizarre underworld, populated by eccentric characters.',
-    genre: 'documentaries',
-    maturity: '18',
-    slug: 'tiger-king',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'Amanda Knox',
-    description:
-      'Amanda Marie Knox is an American woman who spent almost four years in an Italian prison.',
-    genre: 'documentaries',
+      'British POWs are forced to build a railway bridge across the river Kwai for their Japanese captors, not knowing that the allied forces are planning to destroy it.',
+    genre: 'action',
     maturity: '12',
-    slug: 'amanda-knox',
+    slug: 'the-bridge-on-the-river-kwai',
   });
-  firebase.firestore().collection('series').add({
+  firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Citizenfour',
+    title: 'Per un pugno di dollari',
     description:
-      'Citizenfour is a 2014 documentary film directed by Laura Poitras, concerning Edward Snowden and the NSA spying scandal.',
-    genre: 'documentaries',
+      'A wandering gunfighter plays two rival families against each other in a town torn apart by greed, pride, and revenge.',
+    genre: 'action',
     maturity: '12',
-    slug: 'citizenfour',
+    slug: 'per-un-pugno-di-dollari',
   });
-  firebase.firestore().collection('series').add({
+  firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Super Size Me',
+    title: 'Forbidden Planet',
     description:
-      "Director Morgan Spurlock's social experiment in fast-food gastronomy sees him attempting to subsist uniquely on food from the McDonalds",
-    genre: 'documentaries',
-    maturity: '12',
-    slug: 'super-size-me',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'Man on Wire',
-    description:
-      "Filmmaker James Marsh masterfully recreates high-wire daredevil Philippe Petit's 1974 stunt walking on a wire across the Twin Towers.",
-    genre: 'documentaries',
-    maturity: '12',
-    slug: 'man-on-wire',
-  });
-
-  // Comedies
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'The Office',
-    description:
-      'A motley group of office workers go through hilarious misadventures at the Scranton, Pennsylvania, branch of the Dunder Mifflin Paper Company.',
-    genre: 'comedies',
+      "A starship crew goes to investigate the silence of a planet's colony only to find two survivors and a deadly secret that one of them has.",
+    genre: 'action',
     maturity: '15',
-    slug: 'the-office',
+    slug: 'forbidden-planet',
   });
-  firebase.firestore().collection('series').add({
+  firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Arrested Development',
+    title: 'Spartacus',
     description:
-      'The Bluth family, once a prominent name in the business, loses everything after the head patriarch gets convicted for fraud.',
-    genre: 'comedies',
-    maturity: '15',
-    slug: 'arrested-development',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'Curb Your Enthusiasm',
-    description:
-      'Larry David, a famous television writer and producer, gets into various misadventures with his friends and celebrity colleagues in Los Angeles.',
-    genre: 'comedies',
-    maturity: '15',
-    slug: 'curb-your-enthusiasm',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'Family Guy',
-    description:
-      'Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.',
-    genre: 'comedies',
-    maturity: '15',
-    slug: 'family-guy',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'South Park',
-    description:
-      'Four young, schoolgoing boys, Stan Marsh, Kyle Broflovski, Eric Cartman and Kenny McCormick, who live in South Park set out on various adventures.',
-    genre: 'comedies',
-    maturity: '15',
-    slug: 'south-park',
-  });
-
-  // Children
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'Peppa Pig',
-    description:
-      'Peppa, an outgoing preschool pig, participates in many energetic activities. She learns something new every day and has a lot of fun with her family and friends.',
-    genre: 'children',
-    maturity: '0',
-    slug: 'peppa-pig',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'Dora The Explorer',
-    description:
-      'Dora, a seven-year-old girl of Latin American descent, embarks upon numerous adventures in the wilderness with her friend Boots, a monkey, and a variety of fun and useful tools.',
-    genre: 'children',
-    maturity: '0',
-    slug: 'dora-the-explorer',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'PAW Patrol',
-    description:
-      'Six brave puppies, captained by a tech-savvy ten-year-old boy, Ryder, work together to accomplish high-stakes rescue missions to safeguard the residents of the Adventure Bay community.',
-    genre: 'children',
-    maturity: '0',
-    slug: 'paw-patrol',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'Arthur',
-    description:
-      'Bespectacled aardvark Arthur Read demonstrates to kids how to deal with such childhood traumas and challenges as homework, teachers and bullies.',
-    genre: 'children',
-    maturity: '0',
-    slug: 'arthur',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'SpongeBob',
-    description:
-      'A yellow sea sponge named SpongeBob SquarePants lives in the city of Bikini Bottom deep in the Pacific Ocean. ',
-    genre: 'children',
-    maturity: '0',
-    slug: 'spongebob',
-  });
-
-  // Crime
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'Making a Murderer',
-    description:
-      'Exonerated after spending nearly two decades in prison for a crime he did not commit, Steven Avery filed suit against Manitowoc County, Wis., and several individuals involved with his arrest.',
-    genre: 'crime',
-    maturity: '18',
-    slug: 'making-a-murderer',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'Long Shot',
-    description:
-      'An innocent man is accused of murder, leading his attorney on a wild chase to confirm his alibi using raw footage from a television show.',
-    genre: 'crime',
-    maturity: '18',
-    slug: 'long-shot',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'The Confession Killer',
-    description:
-      'Henry Lee Lucas was an American convicted serial killer whose crimes spanned from 1960 to 1983. He was convicted of murdering eleven people and condemned to death for the murder of Debra Jackson, although his sentence would be commuted to life in prison in 1998.',
-    genre: 'crime',
-    maturity: '18',
-    slug: 'the-confession-killer',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'The Innocent Man',
-    description:
-      'Henry Lee Lucas was an American convicted serial killer whose crimes spanned from 1960 to 1983. He was convicted of murdering eleven people and condemned to death for the murder of Debra Jackson.',
-    genre: 'crime',
-    maturity: '18',
-    slug: 'the-innocent-man',
-  });
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'The Staircase',
-    description:
-      "In 2001 novelist Michael Peterson's wife died, and he claimed she perished after falling down stairs at their home. The medical examiner, however, determined that she had been beaten with a weapon",
-    genre: 'crime',
-    maturity: '18',
-    slug: 'the-staircase',
-  });
-
-  // Feel-good
-  firebase.firestore().collection('series').add({
-    id: getUUID(),
-    title: 'Good Will Hunting',
-    description:
-      'Will Hunting, a genius in mathematics, solves all the difficult mathematical problems. When he faces an emotional crisis, he takes help from psychiatrist Dr Sean Maguireto, who helps him recover.',
-    genre: 'feel-good',
+      'The slave Spartacus leads a violent revolt against the decadent Roman Republic.',
+    genre: 'action',
     maturity: '12',
-    slug: 'good-will-hunting',
+    slug: 'spartacus',
   });
-  firebase.firestore().collection('series').add({
+  firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Forrest Gump',
+    title: 'Strangers on a Train',
     description:
-      'Forrest Gump, a man with a low IQ, joins the army for service where he meets Dan and Bubba. However, he cannot stop thinking about his childhood sweetheart Jenny Curran, whose life is messed up.',
-    genre: 'feel-good',
+      'A psychopath forces a tennis star to comply with his theory that two strangers can get away with murder.',
+    genre: 'action',
     maturity: '12',
-    slug: 'forrest-gump',
+    slug: 'strangers-on-a-train',
   });
-  firebase.firestore().collection('series').add({
+  firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Juno',
+    title: 'Knight Rider',
     description:
-      "Social misfit Juno protects herself with a caustic wit, but her unplanned pregnancy has the teen getting more involved in the lives of her baby's adoptive parents than she expected.",
-    genre: 'feel-good',
+      'A lone crimefighter battles the forces of evil with the help of a virtually indestructible and artificially intelligent supercar.',
+    genre: 'action',
     maturity: '12',
-    slug: 'juno',
+    slug: 'knight-rider',
   });
-  firebase.firestore().collection('series').add({
+  // Comedy
+  firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Midnight In Paris',
+    title: 'Bringing Up Baby',
     description:
-      'Gil arrives with his fiancee and her family in Paris for a vacation, even as he tries to finish his debut novel. He is beguiled by the city, which takes him to a time past, away from his fiancee.',
-    genre: 'feel-good',
-    maturity: '12',
-    slug: 'midnight-in-paris',
+      'While trying to secure a $1 million donation for his museum, a befuddled paleontologist is pursued by a flighty and often irritating heiress and her pet leopard, Baby.',
+    genre: 'comedy',
+    maturity: '0',
+    slug: 'bringin-up-baby',
   });
-  firebase.firestore().collection('series').add({
+  firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'School of Rock',
+    title: 'Some Like It Hot',
     description:
-      "Dewey Finn, an amateur rock enthusiast, slyly takes up his friend's substitute teacher's job. Bearing no qualifications for it, he instead starts training the students to form a band.",
-    genre: 'feel-good',
-    maturity: '12',
-    slug: 'school-of-rock',
+      'After two male musicians witness a mob hit, they flee the state in an all-female band disguised as women, but further complications set in.',
+    genre: 'comedy',
+    maturity: '0',
+    slug: 'some-like-it-hot',
   });
-
-  /* Films
-    ============================================ */
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'Duck Soup',
+    description:
+      'Rufus T. Firefly is named president/dictator of bankrupt Freedonia and declares war on neighboring Sylvania over the love of wealthy Mrs. Teasdale.',
+    genre: 'comedy',
+    maturity: '0',
+    slug: 'duck-soup',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'One Hundred and One Dalmatians',
+    description:
+      'When a litter of Dalmatian puppies are abducted by the minions of Cruella de Vil, the parents must find them before she uses them for a diabolical fashion statement.',
+    genre: 'comedy',
+    maturity: '0',
+    slug: 'one-hundred-and-one-dalmatians',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'Gentlemen Prefer Blondes',
+    description:
+      "Showgirls Lorelei Lee and Dorothy Shaw travel to Paris, pursued by a private detective hired by the suspicious father of Lorelei's fiancé, as well as a rich, enamored old man and many other doting admirers.",
+    genre: 'comedy',
+    maturity: '0',
+    slug: 'gentlemen-prefer-blondes',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'Miracle on 34th Street',
+    description:
+      'When a nice old man who claims to be Santa Claus is institutionalized as insane, a young lawyer decides to defend him by arguing in court that he is the real thing.',
+    genre: 'comedy',
+    maturity: '0',
+    slug: 'miracle-on-34th-street',
+  });
   // Drama
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'The Prestige',
+    title: 'Double Indemnity',
     description:
-      'Two friends and fellow magicians become bitter enemies after a sudden tragedy. As they devote themselves to this rivalry, they make sacrifices that bring them fame but with terrible consequences.',
-    genre: 'drama',
-    maturity: '15',
-    slug: 'the-prestige',
-  });
-  firebase.firestore().collection('films').add({
-    id: getUUID(),
-    title: 'Fight Club',
-    description:
-      'Discontented with his capitalistic lifestyle, a white-collared insomniac forms an underground fight club with Tyler, a careless soap salesman. The project soon spirals down into something sinister.',
-    genre: 'drama',
-    maturity: '15',
-    slug: 'fight-club',
-  });
-  firebase.firestore().collection('films').add({
-    id: getUUID(),
-    title: 'Kings Speech',
-    description:
-      'King George VI tries to overcome his stammering problem with the help of speech therapist Lionel Logue and makes himself worthy enough to lead his country through World War II.',
-    genre: 'drama',
-    maturity: '15',
-    slug: 'kings-speech',
-  });
-  firebase.firestore().collection('films').add({
-    id: getUUID(),
-    title: 'The Revenant',
-    description:
-      'Hugh Glass, a legendary frontiersman, is severely injured in a bear attack and is abandoned by his hunting crew. He uses his skills to survive and take revenge on his companion, who betrayed him.',
-    genre: 'drama',
-    maturity: '15',
-    slug: 'the-revenant',
-  });
-  firebase.firestore().collection('films').add({
-    id: getUUID(),
-    title: 'The Social Network',
-    description:
-      'Mark Zuckerberg creates a social networking site, Facebook, with the help of his friend Eduardo Saverin. But soon, a string of lies tears their relationship apart even as Facebook connects people.',
+      'An insurance representative lets himself be talked by a seductive housewife into a murder/insurance fraud scheme that arouses the suspicion of an insurance investigator.',
     genre: 'drama',
     maturity: '12',
-    slug: 'the-social-network',
-  });
-
-  // Suspense
-  firebase.firestore().collection('films').add({
-    id: getUUID(),
-    title: 'Shutter Island',
-    description:
-      'Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote island in order to investigate the disappearance of a patient, where Teddy uncovers a shocking truth about the place.',
-    genre: 'suspense',
-    maturity: '15',
-    slug: 'shutter-island',
+    slug: 'double-indemnity',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Gone Girl',
+    title: 'La belle et la bête',
     description:
-      'Nick Dunne discovers that the entire media focus has shifted on him when his wife Amy Dunne disappears on the day of their fifth wedding anniversary.',
-    genre: 'suspense',
-    maturity: '15',
-    slug: 'gone-girl',
-  });
-  firebase.firestore().collection('films').add({
-    id: getUUID(),
-    title: 'Prisoners',
-    description:
-      "When the police take time to find Keller Dover's daughter and her friend, he decides to go on a search himself. His desperation leads him closer to finding the truth and also jeopardises his own life.",
-    genre: 'suspense',
-    maturity: '15',
-    slug: 'prisoners',
-  });
-  firebase.firestore().collection('films').add({
-    id: getUUID(),
-    title: 'Seven',
-    description:
-      'A serial killer begins murdering people according to the seven deadly sins. Two detectives, one new to the city and the other about to retire, are tasked with apprehending the criminal.',
-    genre: 'suspense',
-    maturity: '15',
-    slug: 'seven',
-  });
-  firebase.firestore().collection('films').add({
-    id: getUUID(),
-    title: 'Zodiac',
-    description:
-      'Robert Graysmith, a cartoonist by profession, finds himself obsessively thinking about the Zodiac killer. He uses his puzzle-solving abilities to get closer to revealing the identity of the killer.',
-    genre: 'suspense',
-    maturity: '15',
-    slug: 'zodiac',
-  });
-
-  // Children
-  firebase.firestore().collection('films').add({
-    id: getUUID(),
-    title: 'Hotel Transylvania',
-    description:
-      'Dracula, who owns a high-end resort for monsters, attempts to keep his daughter from falling in love with Jonathan, a human.',
-    genre: 'children',
+      "A beautiful young woman takes her father's place as the prisoner of a mysterious beast, who wishes to marry her.",
+    genre: 'drama',
     maturity: '0',
-    slug: 'hotel-transylvania',
+    slug: 'la-belle-et-la-bete',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Despicable Me',
+    title: 'His Girl Friday',
     description:
-      'Gru, a criminal mastermind, adopts three orphans as pawns to carry out the biggest heist in history. His life takes an unexpected turn when the little girls see him as their potential father.',
-    genre: 'children',
+      'A newspaper editor uses every trick in the book to keep his ace reporter ex-wife from remarrying.',
+    genre: 'drama',
+    maturity: '12',
+    slug: 'his-girl-friday',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'La règle du jeu',
+    description:
+      'A bourgeois life in France at the onset of World War II, as the rich and their poor servants meet up at a French chateau.',
+    genre: 'drama',
+    maturity: '12',
+    slug: 'la-regle-du-jeu',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'Invasion of the Body Snatchers',
+    description:
+      'A small-town doctor learns that the population of his community is being replaced by emotionless alien duplicates.',
+    genre: 'drama',
     maturity: '0',
-    slug: 'despicable-me',
+    slug: 'invasion-of-the-body-snatchers',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Frozen',
+    title: 'Sweet Smell of Success',
     description:
-      'Anna sets out on a journey with an iceman, Kristoff, and his reindeer, Sven, in order to find her sister, Elsa, who has the power to convert any object or person into ice.',
-    genre: 'children',
+      "Powerful but unethical Broadway columnist J.J. Hunsecker coerces unscrupulous press agent Sidney Falco into breaking up his sister's romance with a jazz musician.",
+    genre: 'drama',
     maturity: '0',
-    slug: 'frozen',
+    slug: 'sweet-smell-of-success',
+  });
+  // Horror
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'King Kong',
+    description:
+      'A film crew goes to a tropical island for an exotic location shoot and discovers a colossal ape who takes a shine to their female blonde star. He is then captured and brought back to New York City for public exhibition.',
+    genre: 'horror',
+    maturity: '15',
+    slug: 'king-kong',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Spirited Away',
+    title: 'The Birds',
     description:
-      'In this animated feature by noted Japanese director Hayao Miyazaki, 10-year-old Chihiro (Rumi Hiiragi) and her parents (Takashi Naitô, Yasuko Sawaguchi) stumble upon a seemingly abandoned amusement park.',
-    genre: 'children',
+      'A wealthy San Francisco socialite pursues a potential boyfriend to a small Northern California town that slowly takes a turn for the bizarre when birds of all kinds suddenly begin to attack people.',
+    genre: 'horror',
+    maturity: '18',
+    slug: 'the-birds',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'Les yeux sans visage',
+    description:
+      'A surgeon causes an accident which leaves his daughter disfigured, and goes to extremes to give her a new face.',
+    genre: 'horror',
+    maturity: '18',
+    slug: 'les-yeux-sans-visage',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'Frankenstein',
+    description:
+      'Dr. Frankenstein dares to tamper with life and death by creating a human monster out of lifeless body parts.',
+    genre: 'horror',
+    maturity: '18',
+    slug: 'frankenstein',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'Repulsion',
+    description:
+      "A sex-repulsed woman who disapproves of her sister's boyfriend sinks into depression and has horrific visions of rape and violence.",
+    genre: 'horror',
+    maturity: '18',
+    slug: 'repulsion',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'Psycho',
+    description:
+      "A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run, and checks into a remote motel run by a young man under the domination of his mother.",
+    genre: 'horror',
+    maturity: '18',
+    slug: 'psycho',
+  });
+  // War
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'The Searchers',
+    description:
+      'An American Civil War veteran embarks on a journey to rescue his niece from the Comanches.',
+    genre: 'war',
+    maturity: '15',
+    slug: 'the-searchers',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'Roma città aperta',
+    description:
+      'During the Nazi occupation of Rome in 1944, the Resistance leader, Giorgio Manfredi, is chased by the Nazis as he seeks refuge and a way to escape.',
+    genre: 'war',
+    maturity: '18',
+    slug: 'roma-citta-aperta',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'Lawrence of Arabia',
+    description:
+      'The story of T.E. Lawrence, the English officer who successfully united and led the diverse, often warring, Arab tribes during World War I in order to fight the Turks.',
+    genre: 'war',
+    maturity: '15',
+    slug: 'lawrence-of-arabia',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'La grande illusion',
+    description:
+      'During WWI, two French soldiers are captured and imprisoned in a German P.O.W. camp. Several escape attempts follow until they are eventually sent to a seemingly inescapable fortress.',
+    genre: 'war',
+    maturity: '18',
+    slug: 'la-grande-illusion',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'La battaglia di Algeri',
+    description:
+      'In the 1950s, fear and violence escalate as the people of Algiers fight for independence from the French government.',
+    genre: 'war',
+    maturity: '18',
+    slug: 'la-battaglia-di-algeri',
+  });
+  firebase.firestore().collection('films').add({
+    id: getUUID(),
+    title: 'Casablanca',
+    description:
+      'A cynical American expatriate struggles to decide whether or not he should help his former lover and her fugitive husband escape French Morocco.',
+    genre: 'war',
+    maturity: '15',
+    slug: 'casablanca',
+  });
+  /* Series
+    ============================================ */
+  // Crime
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'Dragnet',
+    description:
+      'Sgt. Joe Friday and his partners methodically investigate crimes in Los Angeles.',
+    genre: 'crime',
+    maturity: '15',
+    slug: 'dragnet',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'The Rockford Files',
+    description:
+      'The cases of an easy going ex-convict turned private investigator.',
+    genre: 'crime',
+    maturity: '12',
+    slug: 'the-rockford-files',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'Hill Street Blues',
+    description:
+      'The lives and work of the staff of an inner city police precinct.',
+    genre: 'crime',
+    maturity: '12',
+    slug: 'hill-street-blues',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'Miami Vice',
+    description:
+      'Resplendent with authentic 1980\'s music, fashion and vibe, "Miami Vice" follows two undercover detectives and their extended team through the mean streets of Miami, Florida.',
+    genre: 'crime',
+    maturity: '15',
+    slug: 'miami-vice',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'Oz',
+    description:
+      'A series chronicling the daily activities of an unusual prison facility and its criminal inhabitants.',
+    genre: 'crime',
+    maturity: '18',
+    slug: 'oz',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'The Sopranos',
+    description:
+      'New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.',
+    genre: 'crime',
+    maturity: '12',
+    slug: 'the-sopranos',
+  });
+  // Family
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'Rocky and His Friends',
+    description:
+      'Rocky, a plucky flying squirrel and Bullwinkle, a bumbling but lovable moose, have a series of ongoing adventures.',
+    genre: 'family',
     maturity: '0',
-    slug: 'spirited-away',
+    slug: 'rocky-and-his-friends',
   });
-  firebase.firestore().collection('films').add({
+  firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Up',
+    title: 'The Andy Griffith Show',
     description:
-      "Carl, an old widower, goes off on an adventure in his flying house in search of Paradise Falls, his wife's dream destination.",
-    genre: 'children',
+      "Widower Sheriff Andy Taylor, and his son Opie, live with Andy's Aunt Bee in Mayberry, North Carolina. With virtually no crimes to solve, most of Andy's time is spent philosophizing and calming down his cousin Deputy Barney Fife.",
+    genre: 'family',
     maturity: '0',
-    slug: 'up',
+    slug: 'the-andy-griffith-show',
   });
-
-  // Thriller
-  firebase.firestore().collection('films').add({
+  firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Joker',
+    title: 'The Jeffersons',
     description:
-      'Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City.',
-    genre: 'thriller',
-    maturity: '15',
-    slug: 'joker',
+      'A nouveau riche, African-American family who move into a luxury apartment building develop close, if occasionally fractious, relationships with other tenants.',
+    genre: 'family',
+    maturity: '0',
+    slug: 'the-jeffersons',
   });
-  firebase.firestore().collection('films').add({
+  firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'A Quiet Place',
+    title: 'The Cosby Show',
     description:
-      'The Abbott family must now face the terrors of the outside world as they fight for survival in silence. Forced to venture into the unknown, they realize that the creatures that hunt by sound are not the only threats that lurk beyond the sand path.',
-    genre: 'thriller',
-    maturity: '15',
-    slug: 'a-quiet-place',
+      'The goings-on in the life of a successful African-American family.',
+    genre: 'family',
+    maturity: '0',
+    slug: 'the-cosby-show',
   });
-  firebase.firestore().collection('films').add({
+  firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Black Swan',
+    title: 'Doogie Howser, M.D.',
     description:
-      'Nina, a ballerina, gets the chance to play the White Swan, Princess Odette. But she finds herself slipping into madness when Thomas, the artistic director, decides that Lily might fit the role better.',
-    genre: 'thriller',
-    maturity: '15',
-    slug: 'black-swan',
+      'A teenage genius deals with the usual problems of growing up, on top of being a licensed physician in a difficult residency program.',
+    genre: 'family',
+    maturity: '0',
+    slug: 'doogie-howser',
   });
-  firebase.firestore().collection('films').add({
+  firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Nightcrawler',
+    title: 'The Munsters',
     description:
-      'Louis Bloom, a petty thief, realises that he can make money by capturing photographs of criminal activities and starts resorting to extreme tactics to get them.',
-    genre: 'thriller',
-    maturity: '15',
-    slug: 'nightcrawler',
+      'A family of friendly monsters have misadventures, never quite understanding why people react to them so strangely.',
+    genre: 'family',
+    maturity: '0',
+    slug: 'the-munsters',
   });
-  firebase.firestore().collection('films').add({
+  // Comedy
+  firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'The Silence of The Lambs',
+    title: 'Seinfeld',
     description:
-      'Clarice Starling, an FBI agent, seeks help from Hannibal Lecter, a psychopathic serial killer and former psychiatrist, in order to apprehend another serial killer who has been claiming female victims.',
-    genre: 'thriller',
-    maturity: '15',
-    slug: 'the-silence-of-the-lambs',
+      'The continuing misadventures of neurotic New York City stand-up comedian Jerry Seinfeld and his equally neurotic New York City friends.',
+    genre: 'comedy',
+    maturity: '0',
+    slug: 'seinfeld',
   });
-
-  // Romance
-  firebase.firestore().collection('films').add({
+  firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'A Star Is Born',
+    title: 'The Fresh Prince of Bel-Air',
     description:
-      'After falling in love with struggling artist Ally, Jackson, a musician, coaxes her to follow her dreams, while he battles with alcoholism and his personal demons.',
-    genre: 'romance',
-    maturity: '15',
-    slug: 'a-star-is-born',
+      'A streetwise, poor young man from Philadelphia is sent by his mother to live with his aunt, uncle and cousins in their Bel-Air mansion.',
+    genre: 'comedy',
+    maturity: '0',
+    slug: 'the-fresh-prince-of-bel-air',
   });
-  firebase.firestore().collection('films').add({
+  firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Blue Valentine',
-    description:
-      'Dean and Cynthia are married with a daughter and their marriage is about to fall apart. Both come from dysfunctional families and struggle to make sense of their relationship.',
-    genre: 'romance',
-    maturity: '15',
-    slug: 'blue-valentine',
+    title: 'The Larry Sanders Show',
+    description: 'A comedic behind the scenes look at a late night talk show.',
+    genre: 'comedy',
+    maturity: '0',
+    slug: 'the-larry-sanders-show',
   });
-  firebase.firestore().collection('films').add({
+  firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'La La Land',
+    title: 'King of Queens',
     description:
-      'Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire to do what they love. But as success mounts they are faced with decisions that begin...',
-    genre: 'romance',
-    maturity: '15',
-    slug: 'la-la-land',
+      "Delivery man Doug Heffernan has a good life: He has a pretty wife (Carrie), a big television, and friends with which to watch it. Then Carrie's goofy and annoying father Arthur moves in with them.",
+    genre: 'comedy',
+    maturity: '0',
+    slug: 'the-king-of-queens',
   });
-  firebase.firestore().collection('films').add({
+  firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'The Notebook',
+    title: 'Alfred Hitchcock Presents',
     description:
-      "Duke reads the story of Allie and Noah, two lovers who were separated by fate, to Ms Hamilton, an old woman who suffers from Alzheimer's, on a daily basis out of his notebook.",
-    genre: 'romance',
-    maturity: '15',
-    slug: 'the-notebook',
+      'Series of unrelated short stories covering elements of crime, horror, drama, and comedy about people of different backgrounds committing murders, suicides, thefts, and other sorts of crime caused by certain motivations, perceived or not.',
+    genre: 'comedy',
+    maturity: '0',
+    slug: 'alfred-hitchcock-presents',
   });
-  firebase.firestore().collection('films').add({
+  firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Titanic',
+    title: 'Saved by the Bell',
     description:
-      'Seventeen-year-old Rose hails from an aristocratic family and is set to be married. When she boards the Titanic, she meets Jack Dawson, an artist, and falls in love with him.',
-    genre: 'romance',
+      'A close-knit group of six friends get through their teens together while attending Bayside High School in Palisades, California.',
+    genre: 'comedy',
+    maturity: '0',
+    slug: 'saved-by-the-bell',
+  });
+  // Drama
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'Dallas',
+    description:
+      'J.R. Ewing, a Texas oil baron, uses manipulation and blackmail to achieve his ambitions, both business and personal. He often comes into conflict with his brother Bobby, his arch-enemy Cliff Barnes and his long-suffering wife Sue Ellen.',
+    genre: 'drama',
+    maturity: '0',
+    slug: 'dallas',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'Twin Peaks',
+    description:
+      'An idiosyncratic FBI agent investigates the murder of a young woman in the even more idiosyncratic town of Twin Peaks.',
+    genre: 'drama',
+    maturity: '12',
+    slug: 'twin-peaks',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: "I'll fly away",
+    description:
+      'Forrest Bedford is a Southern lawyer in the late 1950s, generally content with his privileged life. But the winds of change are blowing, and he becomes increasingly involved with civil rights cases. Mean- while, Lilly Harper, who cares for his children, is on her own journey of political and personal awareness.',
+    genre: 'drama',
+    maturity: '12',
+    slug: 'ill-fly-away',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'ER',
+    description:
+      "The lives, loves and losses of the doctors and nurses of Chicago's County General Hospital.",
+    genre: 'drama',
     maturity: '15',
-    slug: 'titanic',
+    slug: 'er',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'Buffy the Vampire Slayer',
+    description:
+      'A young woman, destined to slay vampires, demons and other infernal creatures, deals with her life fighting evil, with the help of her friends.',
+    genre: 'drama',
+    maturity: '15',
+    slug: 'buffy-the-vampire-slayer',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'The West Wing',
+    description:
+      'Inside the lives of staffers in the West Wing of the White House.',
+    genre: 'drama',
+    maturity: '15',
+    slug: 'the-west-wing',
+  });
+  // Action
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'Adventures of Superman',
+    description:
+      'The Man of Steel fights crime with help from his friends at the Daily Planet.',
+    genre: 'action',
+    maturity: '12',
+    slug: 'adventures-of-superman',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'Batman',
+    description:
+      'The Caped Crusader and his young ward battle evildoers in Gotham City.',
+    genre: 'action',
+    maturity: '12',
+    slug: 'batman',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'Start Trek',
+    description:
+      'In the 23rd Century, Captain James T. Kirk and the crew of the U.S.S. Enterprise explore the galaxy and defend the United Federation of Planets.',
+    genre: 'action',
+    maturity: '15',
+    slug: 'star-trek',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'The Green Hornet',
+    description:
+      'A newspaper publisher and his Asian valet/martial arts expert battle crime as the feared Green Hornet and Kato.',
+    genre: 'action',
+    maturity: '15',
+    slug: 'the-green-hornet',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'The Six Million Dollar Man',
+    description:
+      'After a severely injured test pilot is rebuilt with nuclear-powered bionic limbs and implants, he serves as an intelligence agent.',
+    genre: 'action',
+    maturity: '12',
+    slug: 'the-six-million-dollar-man',
+  });
+  firebase.firestore().collection('series').add({
+    id: getUUID(),
+    title: 'The Incredible Hulk',
+    description:
+      'A fugitive scientist has the curse of becoming a powerful green monster under extreme emotional stress.',
+    genre: 'action',
+    maturity: '12',
+    slug: 'the-incredible-hulk',
   });
 };
