@@ -61,8 +61,13 @@ const SignIn = () => {
             <Form.Link to="/signup">Sign up now.</Form.Link>
           </Form.Text>
           <Form.TextSmall>
+            Too lazy to sign up? Use credentials:
+            <b> test@test.com </b>
+            <b> test123</b>
+          </Form.TextSmall>
+          <Form.TextSmall>
             This page is protected by Google reCAPTCHA to ensure you're not a
-            bot. Leanr more.
+            bot. Learn more.
           </Form.TextSmall>
         </Form>
       </HeaderContainer>
