@@ -32,7 +32,7 @@ const FooterContainer = () => {
         </Footer.Column>
       </Footer.Row>
       <Footer.Break />
-      <Footer.Text>Classicflix Deutschland</Footer.Text>
+      <Footer.Text>Ugur Tigu</Footer.Text>
     </Footer>
   );
 };

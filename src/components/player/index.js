@@ -21,8 +21,8 @@ Player.Video = ({ src, ...restProps }) => {
     ? ReactDOM.createPortal(
         <Overlay
           {...restProps}
-          onClick={() => setShowPlayer(false)}
           data-testid="player"
+          onClick={() => setShowPlayer(false)}
         >
           <Inner>
             <video id="classicflix-player" controls>

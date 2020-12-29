@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer/> should render the <Footer/> with populated data 1`] = `
+<div
+  class="footer__Container-sc-14iizrq-0 dGvmnd"
+>
+  <div
+    class="footer__Title-sc-14iizrq-4 TyDKQ"
+  >
+    Questions? Contact Us!
+  </div>
+  <div
+    class="footer__Row-sc-14iizrq-2 hxdcGR"
+  >
+    <div
+      class="footer__Column-sc-14iizrq-1 dgmiLF"
+    >
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        FAQ
+      </div>
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Ways to watch
+      </div>
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Coporate Information
+      </div>
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Classicflix Originals
+      </div>
+    </div>
+    <div
+      class="footer__Column-sc-14iizrq-1 dgmiLF"
+    >
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Help Center
+      </div>
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Jobs
+      </div>
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Terms of Use
+      </div>
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Contact Us
+      </div>
+    </div>
+    <div
+      class="footer__Column-sc-14iizrq-1 dgmiLF"
+    >
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Account
+      </div>
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Redeem Gift Cards
+      </div>
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Privacy
+      </div>
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Speed Test
+      </div>
+    </div>
+    <div
+      class="footer__Column-sc-14iizrq-1 dgmiLF"
+    >
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Media Center
+      </div>
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Buy Gift Card
+      </div>
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Cookie Preferences
+      </div>
+      <div
+        class="footer__Link-sc-14iizrq-3 hAhwQV"
+        href="#"
+      >
+        Legal Notices
+      </div>
+    </div>
+  </div>
+  <div
+    class="footer__Break-sc-14iizrq-6 fhuiAY"
+  />
+  <div
+    class="footer__Text-sc-14iizrq-5 dQDtJh"
+  >
+    Ugur Tigu
+  </div>
+</div>
+`;

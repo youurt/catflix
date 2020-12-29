@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Profiles/> should render the <Profiles/> container with populated data but misc procile image 1`] = `
+<div
+  class="profiles__Container-yi8jyv-0 dSqdIY"
+>
+  <h1
+    class="profiles__Title-yi8jyv-1 bXKbRI"
+  >
+    Who's watching?
+  </h1>
+  <ul
+    class="profiles__List-yi8jyv-2 dHRWpf"
+  >
+    <li
+      class="profiles__Item-yi8jyv-5 dtrfAh"
+    >
+      <img
+        class="profiles__Picture-yi8jyv-4 laRAqY"
+        data-testid="profile-picture-misc"
+        src="/images/misc/loading.gif"
+      />
+      <p
+        class="profiles__Name-yi8jyv-3 klVYar"
+      >
+        Ugur
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<Profiles/> should render the <Profiles/> container with populated data but misc profile image 1`] = `
+<div
+  class="profiles__Container-yi8jyv-0 dSqdIY"
+>
+  <h1
+    class="profiles__Title-yi8jyv-1 bXKbRI"
+  >
+    Who's watching?
+  </h1>
+  <ul
+    class="profiles__List-yi8jyv-2 dHRWpf"
+  >
+    <li
+      class="profiles__Item-yi8jyv-5 dtrfAh"
+    >
+      <img
+        class="profiles__Picture-yi8jyv-4 laRAqY"
+        data-testid="profile-picture-misc"
+        src="/images/misc/loading.gif"
+      />
+      <p
+        class="profiles__Name-yi8jyv-3 klVYar"
+      >
+        Ugur
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<Profiles/> should render the <Profiles/> with populated data 1`] = `
+<div
+  class="profiles__Container-yi8jyv-0 dSqdIY"
+>
+  <h1
+    class="profiles__Title-yi8jyv-1 bXKbRI"
+  >
+    Who's watching?
+  </h1>
+  <ul
+    class="profiles__List-yi8jyv-2 dHRWpf"
+  >
+    <li
+      class="profiles__Item-yi8jyv-5 dtrfAh"
+    >
+      <img
+        class="profiles__Picture-yi8jyv-4 laRAqY"
+        data-testid="profile-picture"
+        src="/images/users//images/ugur.png.png"
+      />
+      <p
+        class="profiles__Name-yi8jyv-3 klVYar"
+      >
+        Ugur
+      </p>
+    </li>
+  </ul>
+</div>
+`;

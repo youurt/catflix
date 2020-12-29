@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> should render the <Card/> and toggles the card feature 1`] = `
+<div
+  class="card__Group-sc-1fzidng-2 cuQbQw"
+>
+  <div
+    class="card__Container-sc-1fzidng-1 gcFCET"
+  >
+    <p
+      class="card__Title-sc-1fzidng-0 ighwgO"
+    >
+      Comedy
+    </p>
+    <div
+      class="card__Entities-sc-1fzidng-12 fjzXQn"
+    >
+      <div
+        class="card__Item-sc-1fzidng-13 hkgFNq"
+        data-testid="the-jeffersons-item-feature"
+      >
+        <img
+          class="card__Image-sc-1fzidng-14 bjYtpL"
+          src="/images/series/family/the-jeffersons/small.jpg"
+        />
+        <div
+          class="card__Meta-sc-1fzidng-11 gJNAGL"
+        >
+          <p
+            class="card__SubTitle-sc-1fzidng-3 cDBfHO"
+          >
+            The Jeffersons
+          </p>
+          <p
+            class="card__Text-sc-1fzidng-4 bcshOz"
+          >
+            A nouveau riche, African-American family who move into a luxury apartment building develop close, if occasionally fractious, relationships with other tenants.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="card__Container-sc-1fzidng-1 gcFCET"
+  >
+    <p
+      class="card__Title-sc-1fzidng-0 ighwgO"
+    >
+      Drama
+    </p>
+    <div
+      class="card__Entities-sc-1fzidng-12 fjzXQn"
+    >
+      <div
+        class="card__Item-sc-1fzidng-13 hkgFNq"
+        data-testid="dallas-item-feature"
+      >
+        <img
+          class="card__Image-sc-1fzidng-14 bjYtpL"
+          src="/images/series/drama/dallas/small.jpg"
+        />
+        <div
+          class="card__Meta-sc-1fzidng-11 gJNAGL"
+        >
+          <p
+            class="card__SubTitle-sc-1fzidng-3 cDBfHO"
+          >
+            Dallas
+          </p>
+          <p
+            class="card__Text-sc-1fzidng-4 bcshOz"
+          >
+            J.R. Ewing, a Texas oil baron, uses manipulation and blackmail to achieve his ambitions, both business and personal. He often comes into conflict with his brother Bobby, his arch-enemy Cliff Barnes and his long-suffering wife Sue Ellen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Card /> should render the <Card/> with populated data 1`] = `
+<div
+  class="card__Group-sc-1fzidng-2 cuQbQw"
+>
+  <div
+    class="card__Container-sc-1fzidng-1 gcFCET"
+  >
+    <p
+      class="card__Title-sc-1fzidng-0 ighwgO"
+    >
+      Comedy
+    </p>
+    <div
+      class="card__Entities-sc-1fzidng-12 fjzXQn"
+    >
+      <div
+        class="card__Item-sc-1fzidng-13 hkgFNq"
+      >
+        <img
+          class="card__Image-sc-1fzidng-14 bjYtpL"
+          src="/images/series/family/the-jeffersons/small.jpg"
+        />
+        <div
+          class="card__Meta-sc-1fzidng-11 gJNAGL"
+        >
+          <p
+            class="card__SubTitle-sc-1fzidng-3 cDBfHO"
+          >
+            The Jeffersons
+          </p>
+          <p
+            class="card__Text-sc-1fzidng-4 bcshOz"
+          >
+            A nouveau riche, African-American family who move into a luxury apartment building develop close, if occasionally fractious, relationships with other tenants.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="card__Container-sc-1fzidng-1 gcFCET"
+  >
+    <p
+      class="card__Title-sc-1fzidng-0 ighwgO"
+    >
+      Drama
+    </p>
+    <div
+      class="card__Entities-sc-1fzidng-12 fjzXQn"
+    >
+      <div
+        class="card__Item-sc-1fzidng-13 hkgFNq"
+      >
+        <img
+          class="card__Image-sc-1fzidng-14 bjYtpL"
+          src="/images/series/drama/dallas/small.jpg"
+        />
+        <div
+          class="card__Meta-sc-1fzidng-11 gJNAGL"
+        >
+          <p
+            class="card__SubTitle-sc-1fzidng-3 cDBfHO"
+          >
+            Dallas
+          </p>
+          <p
+            class="card__Text-sc-1fzidng-4 bcshOz"
+          >
+            J.R. Ewing, a Texas oil baron, uses manipulation and blackmail to achieve his ambitions, both business and personal. He often comes into conflict with his brother Bobby, his arch-enemy Cliff Barnes and his long-suffering wife Sue Ellen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

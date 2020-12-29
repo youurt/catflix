@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Jumbotron/> should render the <Jumbotron/> component with populated data 1`] = `
+<div
+  class="jumbotron__Container-sc-5oh53g-6 gCRiIv"
+>
+  <div
+    class="jumbotron__Item-sc-5oh53g-5 javtoJ"
+  >
+    <div
+      class="jumbotron__Inner-sc-5oh53g-0 yFkCg"
+      direction="row"
+    >
+      <div
+        class="jumbotron__Pane-sc-5oh53g-1 bfoByR"
+      >
+        <h1
+          class="jumbotron__Title-sc-5oh53g-2 jVpAHU"
+        >
+          Enjoy on your TV.
+        </h1>
+        <h2
+          class="jumbotron__SubTitle-sc-5oh53g-3 bzrXvb"
+        >
+          Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+        </h2>
+      </div>
+      <div
+        class="jumbotron__Pane-sc-5oh53g-1 bfoByR"
+      >
+        <img
+          alt="Seinfeld on Classicflix"
+          class="jumbotron__Image-sc-5oh53g-4 kya-dqn"
+          data-testid="1-jumbo-image"
+          src="/images/misc/home-tv.jpg"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="jumbotron__Item-sc-5oh53g-5 javtoJ"
+  >
+    <div
+      class="jumbotron__Inner-sc-5oh53g-0 irvTQJ"
+      direction="row-reverse"
+    >
+      <div
+        class="jumbotron__Pane-sc-5oh53g-1 bfoByR"
+      >
+        <h1
+          class="jumbotron__Title-sc-5oh53g-2 jVpAHU"
+        >
+          Download your programmes to watch on the go.
+        </h1>
+        <h2
+          class="jumbotron__SubTitle-sc-5oh53g-3 bzrXvb"
+        >
+          Save your data and watch all your favourites offline.
+        </h2>
+      </div>
+      <div
+        class="jumbotron__Pane-sc-5oh53g-1 bfoByR"
+      >
+        <img
+          alt="Watch on mobile"
+          class="jumbotron__Image-sc-5oh53g-4 kya-dqn"
+          data-testid="2-jumbo-image"
+          src="/images/misc/home-mobile.jpg"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="jumbotron__Item-sc-5oh53g-5 javtoJ"
+  >
+    <div
+      class="jumbotron__Inner-sc-5oh53g-0 yFkCg"
+      direction="row"
+    >
+      <div
+        class="jumbotron__Pane-sc-5oh53g-1 bfoByR"
+      >
+        <h1
+          class="jumbotron__Title-sc-5oh53g-2 jVpAHU"
+        >
+          Watch everywhere.
+        </h1>
+        <h2
+          class="jumbotron__SubTitle-sc-5oh53g-3 bzrXvb"
+        >
+          Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.
+        </h2>
+      </div>
+      <div
+        class="jumbotron__Pane-sc-5oh53g-1 bfoByR"
+      >
+        <img
+          alt="Money Heist on Classicflix"
+          class="jumbotron__Image-sc-5oh53g-4 kya-dqn"
+          data-testid="3-jumbo-image"
+          src="/images/misc/home-imac.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

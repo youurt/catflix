@@ -1,4 +1,3 @@
-/* eslint-disable no-shadow */
 import React, { useState, useContext, createContext } from 'react';
 import {
   Container,
@@ -7,6 +6,7 @@ import {
   Item,
   Header,
   Body,
+  Frame,
 } from './styles/accordion';
 
 const ToggleContext = createContext();
@@ -17,6 +17,9 @@ const Accordion = ({ children, ...restProps }) => {
       <Inner>{children}</Inner>
     </Container>
   );
+};
+Accordion.Frame = function AccordionFrame({ children, ...restProps }) {
+  return <Frame {...restProps}>{children}</Frame>;
 };
 
 Accordion.Title = ({ children, ...restProps }) => {

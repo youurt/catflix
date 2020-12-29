@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion/> should render the <Accordiotn/> with populated data 1`] = `
+<div
+  class="accordion__Container-mofgfd-0 caNBTg"
+>
+  <div
+    class="accordion__Inner-mofgfd-1 ffjCRz"
+  >
+    <h1
+      class="accordion__Title-mofgfd-3 bXwGSX"
+    >
+      Frequently Asked Questions
+    </h1>
+    <div
+      class="accordion__Frame-mofgfd-2 humgWS"
+    >
+      <div
+        class="accordion__Item-mofgfd-4 jnTzQP"
+      >
+        <div
+          class="accordion__Header-mofgfd-5 kJikXx"
+        >
+          What is Classicflix?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+        <div
+          class="accordion__Body-mofgfd-6 DXOIN closed"
+        >
+          <span>
+            Classicflix is a streaming service that offers a wide variety of award-winning classic TV programmes and films – on thousands of internet-connected devices.
+
+You can watch as much as you want, whenever you want, without a single advert – all for one low monthly price. There's always something new to discover, and new TV programmes and films are added every week!
+          </span>
+        </div>
+      </div>
+      <div
+        class="accordion__Item-mofgfd-4 jnTzQP"
+      >
+        <div
+          class="accordion__Header-mofgfd-5 kJikXx"
+        >
+          How much does Classicflix cost?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+        <div
+          class="accordion__Body-mofgfd-6 DXOIN closed"
+        >
+          <span>
+            Watch Classicflix on your smartphone, tablet, smart TV, laptop or streaming device, all for one low fixed monthly fee. Plans start from 5.99 € a month. No extra costs or contracts.
+          </span>
+        </div>
+      </div>
+      <div
+        class="accordion__Item-mofgfd-4 jnTzQP"
+      >
+        <div
+          class="accordion__Header-mofgfd-5 kJikXx"
+        >
+          Where can I watch?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+        <div
+          class="accordion__Body-mofgfd-6 DXOIN closed"
+        >
+          <span>
+            Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Classicflix account to watch instantly on the web at classicflix.com from your personal computer or on any internet-connected device that offers the Classicflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+
+You can also download your favourite programmes with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Classicflix with you anywhere.
+          </span>
+        </div>
+      </div>
+      <div
+        class="accordion__Item-mofgfd-4 jnTzQP"
+      >
+        <div
+          class="accordion__Header-mofgfd-5 kJikXx"
+        >
+          How do I cancel?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+        <div
+          class="accordion__Body-mofgfd-6 DXOIN closed"
+        >
+          <span>
+            Classicflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account at any time.
+          </span>
+        </div>
+      </div>
+      <div
+        class="accordion__Item-mofgfd-4 jnTzQP"
+      >
+        <div
+          class="accordion__Header-mofgfd-5 kJikXx"
+        >
+          What can I watch on Classicflix?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+        <div
+          class="accordion__Body-mofgfd-6 DXOIN closed"
+        >
+          <span>
+            Classicflix has an extensive library of feature films, documentaries, TV programmes, anime, award-winning Classicflix originals, and more. Watch as much as you want, any time you want.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
